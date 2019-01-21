@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.tianpeng.tp_adsdk</groupId>
+  <artifactId>TPADSDK</artifactId>
+  <versioning>
+    <release>1.0.0</release>
+    <versions>
+      <version>null</version>
+      <version>1.0.0</version>
+    </versions>
+    <lastUpdated>20190121023635</lastUpdated>
+  </versioning>
+</metadata>
