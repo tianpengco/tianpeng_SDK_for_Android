@@ -15,21 +15,22 @@
    接入环境：Androidstudio
     
    可以选择依赖库添加：
-   [![](https://jitpack.io/v/tianpengco/tpad.svg)](https://jitpack.io/#tianpengco/tpad)
+   [![](https://jitpack.io/v/tianpengco/tpad.svg)](https://jitpack.io/#tianpengco/tpad)</br>
    或者复制Demo中libs文件目录下的依赖包到项目中。
-   >```
-    >android {
-    >....
-    >//1.添加依赖目录
-    >repositories {
-      >flatDir {
-       > dirs 'libs'
-      >}
-      >}
-    >}
-     > dependencies {
-      >....
-      >//2.添加依赖包
-       > compile(name: 'tpadsdk-release', ext: 'aar')
-      >}
-    >```
+   
+   ```Java
+   android {
+    ....
+    //1.添加依赖目录
+    repositories {
+      flatDir {
+        dirs 'libs'
+      }
+      }
+    }
+      dependencies {
+      ....
+      //2.添加依赖包
+        compile(name: 'tpadsdk-release', ext: 'aar')
+      }
+    ```
