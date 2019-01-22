@@ -31,7 +31,7 @@
       dependencies {
       ....
       //2.添加依赖包
-        compile(name: 'tpadsdk-release', ext: 'aar')
+        compile(name: 'TPADSDK-1.0.0', ext: 'aar')
       }
    ```
    #### 注意事项
