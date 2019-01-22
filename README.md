@@ -6,17 +6,18 @@
   
 ## 2.Demo以及sdk下载
   
-  Demo下载地址(https://github.com/tianpengco/tpad)
+  [Demo下载地址](https://github.com/tianpengco/tpad)
   
 ## 3.SDK接入流程
  
  ### 3.1 添加sdk到工程
  
-    接入环境：Androidstudio
+   接入环境：Androidstudio
     
-    可以选择依赖库添加：[![](https://jitpack.io/v/tianpengco/tpad.svg)](https://jitpack.io/#tianpengco/tpad)
-    或者复制Demo中libs文件目录下的依赖包到项目中。
-    >```
+   可以选择依赖库添加：
+   [![](https://jitpack.io/v/tianpengco/tpad.svg)](https://jitpack.io/#tianpengco/tpad)
+   或者复制Demo中libs文件目录下的依赖包到项目中。
+   >```
     >android {
     >....
     >//1.添加依赖目录
