@@ -14,9 +14,7 @@
  
    接入环境：Androidstudio
     
-   可以选择依赖库添加：
-   [![](https://jitpack.io/v/tianpengco/tpad.svg)](https://jitpack.io/#tianpengco/tpad)</br>
-   或者复制Demo中libs文件目录下的依赖包到项目中。
+   可以复制Demo中libs文件目录下的依赖包到项目中。
    
    ```Java
    android {
