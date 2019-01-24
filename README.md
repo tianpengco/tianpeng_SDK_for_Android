@@ -30,6 +30,11 @@
       ....
       //2.添加依赖包
         compile(name: 'TPADSDK-1.0.0', ext: 'aar')
+	//以下按需要添加
+	compile(name: 'youdao_release-1.0.0', ext: 'aar')
+	compile(name: 'toutiao_release-1.0.0', ext: 'aar')
+	compile(name: 'baidu_release-1.0.0', ext: 'aar')
+	compile(name: 'gdt_release-1.0.0', ext: 'aar')
       }
    ```
    #### 注意事项
