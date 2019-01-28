@@ -29,12 +29,16 @@
       dependencies {
       ....
       //2.添加依赖包
-        compile(name: 'TPADSDK-1.0.0', ext: 'aar')
-	//以下按需要添加
-	compile(name: 'youdao_release-1.0.0', ext: 'aar')
-	compile(name: 'toutiao_release-1.0.0', ext: 'aar')
-	compile(name: 'baidu_release-1.0.0', ext: 'aar')
-	compile(name: 'gdt_release-1.0.0', ext: 'aar')
+        //必须的依赖包
+	compile(name:	'tp_adsdk-release',	ext:	'aar')
+	//广点通
+	compile(name:	'gdt-release',	ext:	'aar') 
+	//头条需要添加以下三个依赖包
+	compile(name:	'toutiao-release',	ext:	'aar')
+	compile(name:	'open_ad_sdk',	ext:	'aar')
+	compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
+	//有道
+	compile(name:	'youdao-release',	ext:	'aar')
       }
    ```
    #### 注意事项
