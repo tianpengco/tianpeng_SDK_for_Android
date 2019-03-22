@@ -43,7 +43,7 @@
    ```
    #### 注意事项
    
-   *fastjson҅org.apache.http.legacy҅jaredrummler.AndroidProcesse，如果你的应用中使用以上几个第三方库，需要移除避免冲突。
+   *org.apache.http.legacy҅jaredrummler.AndroidProcesse，如果你的应用中使用以上几个第三方库，需要移除避免冲突。
    *如果项目中集成了其他广告平台sdk也尽量移除避免冲突
    
    ### 3.2权限申请
