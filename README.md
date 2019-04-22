@@ -43,8 +43,8 @@
    ```
    #### 注意事项
    
-   *org.apache.http.legacy҅jaredrummler.AndroidProcesse，如果你的应用中使用以上几个第三方库，需要移除避免冲突。
-   *如果项目中集成了其他广告平台sdk也尽量移除避免冲突
+   *org.apache.http.client,com.jaredrummler:android-processes，如果你的应用中使用以上两个个第三方库，需要移除避免冲突。
+   *如果项目中集成了重复的其他广告平台sdk也尽量移除避免冲突
    
    ### 3.2权限申请
    
@@ -73,7 +73,7 @@ ACCESS_NETWORK_STATE̵ACCESS_WIFI_STATE这几个权限请确保获取，否则�
 
 提示：appid请联系商务获取，并在Application的onCreat()方法中进行SDK初始化
 ```Java
- // TODO: 2018/10/22 修改为自己的appId 测试id = 123
+ // TODO: 2018/10/22 修改为自己的appId 测试id = RE6OYRTCV4568
         // TODO: debug参数 默认传入false.
         TPADMobSDK.instance().initSdk(getApplicationContext(), APP_ID, debug);
 ```
