@@ -262,8 +262,14 @@ android:resource="@xml/file_paths" />
 ```Java
 <?xml version="1.0" encoding="utf-8"?>
 <paths xmlns:android="http://schemas.android.com/apk/res/android">
-<external-path name="external_path" path="." />
-<external-files-path name="external_files_path" path="." />
+    <!--穿山甲以及其他sdk需要-->
+    <external-path name="external_path" path="Download" />
+    <external-files-path name="external_files_path" path="Download" />
+    <!--百度sdk需要-->
+    <external-files-path name="bdpath" path="bddownload/" />
+    <external-path name="bdpathsd" path="bddownload/" />
+    <!--广点通sdk需要-->
+    <external-path name="gdt_sdk_download_path" path="GDTDOWNLOAD" />
 </paths>
 ```
 为了适配下载和安装相关功能，在工程中引用包  com.android.support:support-v4:24.2.0 使用24.2.0以及以上版本
