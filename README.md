@@ -248,6 +248,7 @@ Banner广告控件容器保证不低于50dp，建议使用自适应
    
    如果您的应用需要适配7.0以上，请在AndroidManifest中添加以下代码：
    ```Java
+    <!--需要声明以下provider-->
    <provider
 android:name="android.support.v4.content.FileProvider"
 android:authorities="${applicationId}.fileprovider"
@@ -257,6 +258,26 @@ android:grantUriPermissions="true">
 android:name="android.support.FILE_PROVIDER_PATHS"
 android:resource="@xml/file_paths" />
 </provider>
+ <!--头条穿山甲需要声明以下provider-->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
+            android:authorities="${applicationId}.TTFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/tpad_download_paths" />
+        </provider>
+        <!--百度广告需要声明以下provider-->
+        <provider
+        android:name="com.baidu.mobads.openad.FileProvider"
+        android:authorities="${applicationId}.bd.provider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/tpad_download_paths" />
+        </provider>
 ```
 
 在res/xml目录下，新建一个XML文件ﬁle_paths,在该文件中添加如下代码：
