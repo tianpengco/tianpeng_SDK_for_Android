@@ -244,7 +244,7 @@ Banner广告控件容器保证不低于50dp，建议使用自适应
                 adMobGenInsertView.loadAd();
    ```
    
-    ### 4.5 激励视频广告示例
+   ### 4.5 激励视频广告示例
    
    ```Java
    adMobGenRewardVideoView = new ADMobGenRewardVideoView(RewardVideoActivity.this);
