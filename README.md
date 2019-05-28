@@ -32,15 +32,20 @@
       ....
       //2.添加依赖包
         //必须的依赖包
-	compile(name:	'tp_adsdk-release',	ext:	'aar')
+	implementation(name:	'tp_adsdk-release',	ext:	'aar')
 	//广点通
-	compile(name:	'gdt-release',	ext:	'aar') 
-	//头条需要添加以下三个依赖包
-	compile(name:	'toutiao-release',	ext:	'aar')
-	compile(name:	'open_ad_sdk',	ext:	'aar')
-	compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
+	implementation(name:	'gdt-release',	ext:	'aar') 
+	//头条需要添加以下依赖包
+	implementation(name:	'toutiao-release',	ext:	'aar')
+	implementation(name:	'open_ad_sdk',	ext:	'aar')
+	implementation(name:	'android-query-full.0.26.7',	ext:	'jar')
+	implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
+	//百度
+	implementation(name:	'baidu-release',	ext:	'aar')
+	implementation(name:	'Baidu_MobAds_SDK-release',	ext:	'aar')
+	implementation(name:	'android-query-full.0.26.7',	ext:	'jar')
 	//有道
-	compile(name:	'youdao-release',	ext:	'aar')
+	implementation(name:	'youdao-release',	ext:	'aar')
       }
    ```
    #### 注意事项
@@ -237,6 +242,67 @@ Banner广告控件容器保证不低于50dp，建议使用自适应
                     }
                 });
                 adMobGenInsertView.loadAd();
+   ```
+   
+    ### 4.5 激励视频广告示例
+   
+   ```Java
+   adMobGenRewardVideoView = new ADMobGenRewardVideoView(RewardVideoActivity.this);
+   adMobGenRewardVideoView.setListener(new ADMobGenRewardVideoAdListener() {
+            @Override
+            public void onADExposure() {
+                Log.e(TAG, "广告展示曝光回调，但不一定是曝光成功了，比如一些网络问题导致上报失败 ::::: ");
+            }
+
+            @Override
+            public void onVideoCached() {
+                Log.e(TAG, "视频广告已经缓存成功 ::::: ");
+                isLoaded = true;
+                Toast.makeText(RewardVideoActivity.this,"video cached",Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onADShow() {
+                Log.e(TAG, "广告打开成功了 ::::: ");
+            }
+
+            @Override
+            public void onReward() {
+                Log.e(TAG, "激励视频触发激励（观看视频大于一定时长或者视频播放完毕）::::: ");
+            }
+
+            @Override
+            public void onVideoComplete() {
+                Log.e(TAG, "激励视频播放完毕::::: ");
+            }
+
+            @Override
+            public void onADFailed(String s) {
+                dismissProgressDialog();
+                Log.e(TAG, "广告获取失败了 ::::: " + s);
+            }
+
+            @Override
+            public void onADReceiv() {
+                dismissProgressDialog();
+                Log.e(TAG, "广告获取成功了 ::::: ");
+            }
+
+            @Override
+            public void onADClick() {
+                Log.e(TAG, "广告被点击了 ::::: ");
+            }
+
+            @Override
+            public void onAdClose() {
+                Log.e(TAG, "广告被关闭了，改回调不一定会有 ::::: ");
+            }
+        });
+        adMobGenRewardVideoView.loadAd();
+    //展示激励视频广告
+     public void showAd(View view){
+       adMobGenRewardVideoView.show();
+    }
    ```
    
    注意事项：
