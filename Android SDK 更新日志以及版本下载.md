@@ -8,6 +8,11 @@
 #### V 1.1
 
 1.更新上游sdk版本
-2、加入激励视频广告类型
+2.加入激励视频广告类型
 
-#### 下载地址： [V1.1 sdk下载](https://github.com/tianpengco/tianpeng_SDK_for_Android/releases/download/v1.1/tpadsdk_v1.1.zip)
+#### V 1.1.2
+
+1.优化插屏广告加载方式
+2.优化sdk上报统计
+
+#### 下载地址： [V1.1.2 sdk下载](https://github.com/tianpengco/tianpeng_SDK_for_Android/releases/download/v1.1.2/tpadsdk_v1.1.2.zip)
