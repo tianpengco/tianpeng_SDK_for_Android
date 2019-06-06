@@ -408,3 +408,11 @@ get ad ﬁled  广告未放量，请联系商务</br>
 platams is empty  广告渠道未接入，请联系商务
    
    
+## 8. 版权
+Copyright 2019 版权杭州天鹏网络技术有限公司.  <br> 
+
+
+客服热线：136 3418 8697  <br>
+邮箱： qiuchanghong@tianpengnet.com <br>
+ 
+ 
