@@ -15,4 +15,9 @@
 1.优化插屏广告加载方式
 2.优化sdk上报统计
 
-#### 下载地址： [V1.1.2 sdk下载](https://github.com/tianpengco/tianpeng_SDK_for_Android/releases/download/v1.1.2/tpadsdk_v1.1.2.zip)
+#### V 1.2
+
+1.升级广点通banner2.0的展现
+2.优化填充率，获取更高收益
+
+#### 下载地址： [V1.2 sdk下载](https://github.com/tianpengco/tianpeng_SDK_for_Android/releases/download/v1.2/tpadsdk_v1.2.zip)
