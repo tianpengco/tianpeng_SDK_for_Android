@@ -20,4 +20,8 @@
 1.升级广点通banner2.0，插屏2.0的展现
 2.优化填充率，获取更高收益
 
-#### 下载地址： [V1.2 sdk下载](https://github.com/tianpengco/tianpeng_SDK_for_Android/releases/download/v1.2/tpadsdk_v1.2.zip)
+#### V 1.3
+
+1.修复部分bug
+
+#### 下载地址： [V1.3 sdk下载](https://github.com/tianpengco/tianpeng_SDK_for_Android/releases/download/v1.2/tpadsdk_v1.3.zip)
