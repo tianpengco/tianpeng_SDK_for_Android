@@ -24,4 +24,4 @@
 
 1.修复部分bug
 
-#### 下载地址： [V1.3 sdk下载](https://github.com/tianpengco/tianpeng_SDK_for_Android/releases/download/v1.2/tpadsdk_v1.3.zip)
+#### 下载地址： [V1.3 sdk下载](https://github.com/tianpengco/tianpeng_SDK_for_Android/releases/download/v1.3/tpadsdk_v1.3.zip)
