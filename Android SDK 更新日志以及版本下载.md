@@ -24,4 +24,10 @@
 
 1.修复部分bug
 
-#### 下载地址： [V1.3 sdk下载](https://github.com/tianpengco/tianpeng_SDK_for_Android/releases/download/v1.3/tpadsdk_v1.3.zip)
+#### V 1.4
+
+1.修复部分bug
+2.新增讯飞，inmobi两个广告渠道
+3.优化了主包体积
+
+#### 下载地址： [V1.4 sdk下载](https://github.com/tianpengco/tianpeng_SDK_for_Android/releases/download/v1.4/tpadsdk_v1.4.zip)
