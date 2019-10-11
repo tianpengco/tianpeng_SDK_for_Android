@@ -35,6 +35,7 @@
 	implementation(name:	'tp_adsdk-release',	ext:	'aar')
 	//广点通
 	implementation(name:	'gdt-release',	ext:	'aar') 
+	implementation(name:	'GDTSDK',	ext:	'aar') 
 	//头条需要添加以下依赖包
 	implementation(name:	'toutiao-release',	ext:	'aar')
 	implementation(name:	'open_ad_sdk',	ext:	'aar')
@@ -46,11 +47,15 @@
 	implementation(name:	'android-query-full.0.26.7',	ext:	'jar')
 	//有道
 	implementation(name:	'youdao-release',	ext:	'aar')
+	//讯飞
+	implementation(name:	'xunfei-release',	ext:	'aar')
+	//inmobi广告平台
+	implementation(name:	'inmobi-release',	ext:	'aar')
+	implementation 'com.squareup.picasso:picasso:2.5.2'
       }
    ```
    #### 注意事项
    
-   *org.apache.http.client,com.jaredrummler:android-processes，如果你的应用中使用以上两个个第三方库，需要移除避免冲突。
    *如果项目中集成了重复的其他广告平台sdk也尽量移除避免冲突
    
    ### 3.2权限申请
@@ -73,6 +78,7 @@
 PS:ACCESS_COARSE_LOCATION̵READ_PHONE_STATE̵WRITE_EXTERNAL_STORAGE̵
 ACCESS_NETWORK_STATE̵ACCESS_WIFI_STATE这几个权限请确保获取，否则可能无法获取广告
 （可参考Demo中的SplashActivity）
+WAKE_LOCK权限为激励视频广告所需，若无添加则不用获取此权限
 
 ## 4. 接入代码
 
@@ -359,6 +365,10 @@ android:resource="@xml/file_paths" />
     <external-path name="bdpathsd" path="bddownload/" />
     <!--广点通sdk需要-->
     <external-path name="gdt_sdk_download_path" path="GDTDOWNLOAD" />
+     <!--讯飞sdk需要-->
+    <!--<external-path-->
+        <!--name="IFly_AD_Download_Path"-->
+        <!--path="IFlyAdDownload" />-->
 </paths>
 ```
 为了适配下载和安装相关功能，在工程中引用包  com.android.support:support-v4:24.2.0 使用24.2.0以及以上版本
@@ -376,8 +386,6 @@ android:resource="@xml/file_paths" />
 -keep class cn.async.admobhttp.**{	*;	}
 -keep class com.jaredrummler.android.processes.**{*;}
 -keep class com.jaredrummler.android.processes.models.**{*;}
--dontwarn org.apache.commons.**
--keep class org.apache.**{	*;	}
 #广点通sdk
 -keep class com.qq.e.**	{public protected *;}
 -keep class android.support.v4.**{public *;}
@@ -399,6 +407,22 @@ public static ** valueOf(java.lang.String);
 -keep class com.bytedance.sdk.openadsdk.**	{	*;	}
 -keep class com.androidquery.callback.**	{*;}
 -keep class com.bytedance.sdk.openadsdk.service.TTDownloadProvider
+#讯飞广告sdk
+-dontwarn com.iflytek.**
+-keep class com.iflytek.**{*;}
+-keep class android.support.v4.**{public * ;}
+#inmobi广告sdk
+-keepattributes SourceFile,LineNumberTable
+-keep class com.inmobi.** { *; }
+-dontwarn com.inmobi.**
+-keep public class com.google.android.gms.**
+-dontwarn com.google.android.gms.**
+-dontwarn com.squareup.picasso.**
+-keep class com.google.android.gms.ads.identifier.AdvertisingIdClient{public *;}
+-keep class com.google.android.gms.ads.identifier.AdvertisingIdClient$Info{public *;}
+-keep class com.moat.** {*;}
+-dontwarn com.moat.**
+-keep class com.integralads.avid.library.** {*;}
 ```
 
 ## 7. 常见问题
