@@ -88,7 +88,13 @@ WAKE_LOCK权限为激励视频广告所需，若无添加则不用获取此权�
 ```Java
  // TODO: 2018/10/22 修改为自己的appId 测试id = RE6OYRTCV4568
         // TODO: debug参数 默认传入false.
-        TPADMobSDK.instance().initSdk(getApplicationContext(), APP_ID, debug);
+        TPADMobSDK.instance().initSdk(getApplicationContext(), APP_ID, debug
+	, ADMobGenAdPlaforms.PLAFORM_GDT
+//                , ADMobGenAdPlaforms.PLAFORM_XUNFEI
+//                , ADMobGenAdPlaforms.PLAFORM_INMOBI
+//                , ADMobGenAdPlaforms.PLAFORM_TOUTIAO
+//                , ADMobGenAdPlaforms.PLAFORM_BAIDU
+//                , ADMobGenAdPlaforms.PLAFORM_YOUDAO);
 ```
 ### 4.2 开屏广告示例
 
