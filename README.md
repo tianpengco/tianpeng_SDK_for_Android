@@ -314,6 +314,8 @@ Banner广告控件容器保证不低于50dp，建议使用自适应
     //展示激励视频广告
      public void showAd(View view){
        adMobGenRewardVideoView.show();
+       // 这个方法可以传递渠道以及对应的广告位id参数，适用于多个激励视频广告位，需要分别调用的情况
+//        adMobGenRewardVideoView.loadAd(ADMobGenAdPlaforms.PLAFORM_TOUTIAO,ID);
     }
    ```
    
@@ -346,6 +348,10 @@ android:resource="@xml/file_paths" />
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/tpad_download_paths" />
         </provider>
+	 <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
         <!--百度广告需要声明以下provider-->
         <provider
         android:name="com.baidu.mobads.openad.FileProvider"
@@ -363,7 +369,13 @@ android:resource="@xml/file_paths" />
 ```Java
 <?xml version="1.0" encoding="utf-8"?>
 <paths xmlns:android="http://schemas.android.com/apk/res/android">
-    <!--穿山甲以及其他sdk需要-->
+     <!--穿山甲 -->
+    <external-path name="tt_external_root" path="." />
+    <external-path name="tt_external_download" path="Download" />
+    <external-files-path name="tt_external_files_download" path="Download" />
+    <files-path name="tt_internal_file_download" path="Download" />
+    <cache-path name="tt_internal_cache_download" path="Download" />
+    <!--其他sdk需要-->
     <external-path name="external_path" path="Download" />
     <external-files-path name="external_files_path" path="Download" />
     <!--百度sdk需要-->
@@ -444,10 +456,10 @@ Copyright 2019 杭州天鹏网络技术有限公司.  <br>
 
 ## 9. 联系方式
 
-客服热线：136 3418 8697  <br>
+客服热线：15158193543  <br>
 
-邮箱： qiuchanghong@tianpengnet.com <br>
+邮箱： yuhong@tianpengnet.com <br>
 
-QQ: 286043810@qq.com <br>
+QQ: 353023518@qq.com <br>
  
  
