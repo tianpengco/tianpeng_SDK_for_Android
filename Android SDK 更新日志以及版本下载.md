@@ -30,4 +30,11 @@
 2.新增讯飞，inmobi两个广告渠道
 3.优化了主包体积
 
+
+#### V 1.5
+
+1.升级广点通，头条，百度上游sdk版本
+2.增加头条激励视频跳过操作（广点通百度本身支持）
+3.新增头条以及百度渠道的全屏视频广告类型
+
 #### 下载地址： [V1.5 sdk下载](https://github.com/tianpengco/tianpeng_SDK_for_Android/releases/download/v1.5/tpadsdk_v1.5.zip)
